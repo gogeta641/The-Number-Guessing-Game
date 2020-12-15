@@ -26,7 +26,7 @@ while guess != chosen:
         elif guess < chosen:
             print("Too low.")
         else:
-            print("Correct guess. You win.")
+            print(f"You got it right. The answer was {guess}. You win.")
             break
         counter -= 1
         if counter == 0:
