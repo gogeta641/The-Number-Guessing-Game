@@ -29,7 +29,7 @@ while guess != chosen:
         break
     counter -= 1
     if counter == 0:
-        print("You are out of chances. You lose")
+        print(f"You are out of chances. You lose. The actual number was {chosen}.")
         break
     print("Guess again.")
         
