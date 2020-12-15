@@ -18,19 +18,18 @@ elif difficulty == "hard":
 guess = 0
 
 while guess != chosen:
-    while counter > 0:
-        print(f"You have {counter} attempts remaining to guess a number.")
-        guess = int(input("Make a guess: "))
-        if guess > chosen:
-            print("Too high.")
-        elif guess < chosen:
-            print("Too low.")
-        else:
-            print(f"You got it right. The answer was {guess}. You win.")
-            break
-        counter -= 1
-        if counter == 0:
-            print("You are out of chances. You lose")
-            break
-        print("Guess again.")
+    print(f"You have {counter} attempts remaining to guess a number.")
+    guess = int(input("Make a guess: "))
+    if guess > chosen:
+        print("Too high.")
+    elif guess < chosen:
+        print("Too low.")
+    else:
+        print(f"You got it right. The answer was {guess}. You win.")
+        break
+    counter -= 1
+    if counter == 0:
+        print("You are out of chances. You lose")
+        break
+    print("Guess again.")
         
